@@ -250,6 +250,35 @@ img {
   border-radius: 0.5rem;
 }
 
+/* Responsive styles for Experience section */
+@media screen and (max-width: 768px) {
+  #experience .about__container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #experience .about__img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  #experience .about__img img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #experience .about__container > div:not(.about__img) {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
